@@ -1,1 +1,5 @@
-.idea
+# MacOS
+.DS_Store/
+
+# IDE
+.idea/

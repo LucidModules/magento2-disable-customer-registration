@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/deved-it/magento2-disable-customer-registration.svg?branch=master)](https://travis-ci.org/deved-it/magento2-disable-customer-registration)
 [![License](https://poser.pugx.org/deved/magento2-disable-customer-registration/license)](https://packagist.org/packages/deved/magento2-disable-customer-registration)
 
+This is a fork of the [deved-it/magento2-disable-customer-registration](https://github.com/deved-it/magento2-disable-customer-registration) module.
 
 ## Magento 2 disable customer registration
 This extension allows you to disable the customer registration in your Magento store.  
@@ -12,8 +13,8 @@ default Registration form & link on his Magento store
 ## Installation
 via composer:
 `cd` to your magento webroot    
-1. `composer require deved/magento2-disable-customer-registration`  
-2. `bin/magento module:enable Deved_DisableRegistration`
+1. `composer require lucid-modules/module-disable-customer-registration`  
+2. `bin/magento module:enable LucidModules_DisableCustomerRegistration`
 3. `bin/magento setup:upgrade`
 
 ## Configuration

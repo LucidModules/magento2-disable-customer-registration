@@ -1,9 +1,13 @@
 <?php
 /**
  * Copyright (c) 2016 Salvatore Guarino. All rights reserved.
+ * Copyright © Lucid Modules. All rights reserved.
+ * See LICENSE.txt for license details.
  */
 
-namespace Deved\DisableRegistration\Plugin\Customer\Model\Registration;
+declare(strict_types=1);
+
+namespace LucidModules\DisableCustomerRegistration\Plugin\Customer\Model\Registration;
 
 use Magento\Customer\Model\Registration;
 use Magento\Framework\App\Config\ScopeConfigInterface;
@@ -11,15 +15,11 @@ use Magento\Store\Model\ScopeInterface;
 
 class DisableRegistrationPlugin
 {
-    /**
-     * @var ScopeConfigInterface
-     */
-    protected $scopeConfig;
-    const XML_PATH_DISABLE_CUSTOMER_REGISTRATION = 'customer/create_account/disable_customer_registration';
+    private const XML_PATH_DISABLE_CUSTOMER_REGISTRATION = 'customer/create_account/disable_customer_registration';
 
-    public function __construct(ScopeConfigInterface $scopeConfig)
-    {
-        $this->scopeConfig = $scopeConfig;
+    public function __construct(
+        private readonly ScopeConfigInterface $scopeConfig
+    ) {
     }
 
     /**
@@ -31,10 +31,11 @@ class DisableRegistrationPlugin
      */
     public function afterIsAllowed(Registration $subject, $result)
     {
-        if ($this->scopeConfig->isSetFlag(
+        $isBlocked = $this->scopeConfig->isSetFlag(
             self::XML_PATH_DISABLE_CUSTOMER_REGISTRATION,
             ScopeInterface::SCOPE_STORE
-        )) {
+        );
+        if ($isBlocked) {
             return false;
         }
 

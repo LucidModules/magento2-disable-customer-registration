@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright © Lucid Modules. All rights reserved.-->
+<!--See LICENSE.txt for license details.-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <customer>
+            <create_account>
+                <disable_customer_registration>1</disable_customer_registration>
+            </create_account>
+        </customer>
+    </default>
+</config>
