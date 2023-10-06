@@ -1,7 +1,6 @@
-[![Latest Stable Version](https://poser.pugx.org/deved/magento2-disable-customer-registration/v/stable)](https://packagist.org/packages/deved/magento2-disable-customer-registration)
-[![Total Downloads](https://poser.pugx.org/deved/magento2-disable-customer-registration/downloads)](https://packagist.org/packages/deved/magento2-disable-customer-registration)
-[![Build Status](https://travis-ci.org/deved-it/magento2-disable-customer-registration.svg?branch=master)](https://travis-ci.org/deved-it/magento2-disable-customer-registration)
-[![License](https://poser.pugx.org/deved/magento2-disable-customer-registration/license)](https://packagist.org/packages/deved/magento2-disable-customer-registration)
+[![Maintainability](https://api.codeclimate.com/v1/badges/51407a44f6a7da5103c0/maintainability)](https://codeclimate.com/github/LucidModules/magento2-disable-customer-registration/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/51407a44f6a7da5103c0/test_coverage)](https://codeclimate.com/github/LucidModules/magento2-disable-customer-registration/test_coverage) 
+[![Known Vulnerabilities](https://snyk.io/test/github/LucidModules/magento2-disable-customer-registration/badge.svg)](https://snyk.io/test/github/LucidModules/magento2-disable-customer-registration)
 
 This is a fork of the [deved-it/magento2-disable-customer-registration](https://github.com/deved-it/magento2-disable-customer-registration) module.
 
